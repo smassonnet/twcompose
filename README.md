@@ -75,7 +75,7 @@ Controls the name and version of the Docker image used for the collector contain
 
 ```yml
 # twitter-compose.yml
-image_tag: "0.1"
+image_tag: "0.1.0"
 image_name: "ghcr.io/smassonnet/twcollect"
 ```
 
