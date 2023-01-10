@@ -46,11 +46,11 @@ twitter_token: "<TWITTER_BEARER_TOKEN>"
 Then, we need to configure TwCompose in a file called `twitter-compose.yml`.
 This file contains the definition of:
 
-- **Stream rules**: Defines the scope of tweets to collect (see the Twitter guide on [how to build a rule][tw-build-rule])
+- **Stream rules**: Defines the scope of tweets to collect (see the Twitter's guide on [How to build a rule][tw-build-rule])
 - **Parameters**: Defines the tweets' attributes to collect from the filtered stream API (see the [Filtered Stream documentation][tw-get-filtered-stream])
 - **Collection and output files**: Defines which version of the collection script ([TwCollect][twcollect]) to use as well as the output path parameters.
 
-This is an example of file that collects tweet text for tweets mentioning the `chocolate` with an image attached.
+This is an example of file that collects tweet text for tweets mentioning `chocolate` with an image attached.
 
 ```yml
 # twitter-compose.yml
@@ -76,7 +76,7 @@ Once defined, the stream collection can be validated and started with the follow
 
 | Command                      | Description                                                                                                             |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `twitter-compose up --check` | Validates the content of the rules against the Twitter API. This is a dry run command that will not perform and update. |
+| `twitter-compose up --check` | Validates the content of the rules against the Twitter API. This is a dry run command that will not perform any update. |
 | `twitter-compose volume`     | Estimates the volume of each rule defined in the `streams` section.                                                     |
 | `twitter-compose up`         | Starts the collection of tweets from the Filtered Stream API.                                                           |
 
