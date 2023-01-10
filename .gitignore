@@ -56,3 +56,4 @@ MANIFEST
 # Project test files
 credentials.yml
 twitter-compose.yml
+data
